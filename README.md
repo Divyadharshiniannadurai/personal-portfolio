@@ -5,7 +5,12 @@ Built with **HTML, CSS, and JavaScript**.
 
 ### Features
 - About Me section  
-- Contact details  
-- Clean and responsive design  
+- Contact details
+- project details 
+- Clean and responsive design
+
+### Technologies Used
+-HTML5 – for structure
+-CSS3 – for styling
 
  
