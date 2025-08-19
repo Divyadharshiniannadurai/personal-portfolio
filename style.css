@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e6f2ff, #cce6ff);
+  color: #003366;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3399ff;
+}
+
+/* Footer */
+footer {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+/* Home Page Layout */
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  padding: 0 10%;
+}
+
+.intro-text {
+  flex: 1;
+  animation: fadeInLeft 1s ease;
+}
+
+.intro-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.intro-text h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0059b3, #3399ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 15px;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  color: #004080;
+  margin-bottom: 25px;
+}
+
+.about-btn {
+  background: linear-gradient(90deg, #3399ff, #0059b3);
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.about-btn:hover {
+  background: linear-gradient(90deg, #0059b3, #3399ff);
+  transform: translateY(-2px);
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  color: #0059b3;
+  background: rgba(255,255,255,0.6);
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #0059b3;
+  color: white;
+}
+
+.profile-pic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeInRight 1s ease;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 6px solid rgba(255,255,255,0.6);
+  box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
+  background: white;
+}
+
+/* About Page */
+.about-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  animation: fadeInUp 1s ease;
+  line-height: 1.6;
+}
+
+/* Projects Page */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; 
+  padding: 40px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  flex: 1 1 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.project-card h3 {
+  color: #0a3d62;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #05445e;
+  line-height: 1.5;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Page */
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  animation: fadeInUp 1s ease;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: linear-gradient(90deg, #3399ff, #0059b3);
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #0059b3, #3399ff);
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {opacity:0; transform: translateX(-30px);}
+  to {opacity:1; transform: translateX(0);}
+}
+
+@keyframes fadeInRight {
+  from {opacity:0; transform: translateX(30px);}
+  to {opacity:1; transform: translateX(0);}
+}
+
+@keyframes fadeInUp {
+  from {opacity:0; transform: translateY(30px);}
+  to {opacity:1; transform: translateY(0);}
+}
