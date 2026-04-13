@@ -239,3 +239,108 @@ form button:hover {
   from {opacity:0; transform: translateY(30px);}
   to {opacity:1; transform: translateY(0);}
 }
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40px;
+  color: #0a3d62;
+}
+
+/* Achievements & Certifications Layout */
+.timeline-container {
+  max-width: 900px;
+  margin: 30px auto;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Vertical Line */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #3399ff;
+}
+
+/* Item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+/* Dot */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: #0059b3;
+  border-radius: 50%;
+}
+
+/* Content Box */
+.timeline-content {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.timeline-content h3 {
+  margin-bottom: 5px;
+  color: #0a3d62;
+}
+
+.timeline-content p {
+  color: #05445e;
+}
+
+/* Skills Section */
+.skills-container {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Skill Bar */
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  height: 10px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3399ff, #0059b3);
+}
+
+/* Skill Tags */
+.skill-tags {
+  margin-top: 20px;
+}
+
+.skill-tags span {
+  display: inline-block;
+  background: rgba(255,255,255,0.6);
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+}
