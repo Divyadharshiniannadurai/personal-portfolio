@@ -1,4 +1,4 @@
-[Personal Portfolio]( https://divyadharshiniannadurai.github.io/personal-portfolio/)
+[Personal Portfolio](https://divyadharshiniannadurai.github.io/personal-portfolio/)
 
 # 🌐 Personal Portfolio
 
